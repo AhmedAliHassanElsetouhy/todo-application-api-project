@@ -47,7 +47,6 @@ public class TodoTest {
         // Get user token
         String token = UserSteps.getUserToken();
 
-        //saas
         // Create a new Todo object without the isCompleted property
         Todo todo = TodoSteps.addTodoTaskWithoutIsCompleted();
 
