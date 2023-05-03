@@ -46,7 +46,7 @@ public class TodoTest {
     public void shouldNotBeAbleToAddTodoWhenIfIsCompletedIsMissing() {
         // Get user token
         String token = UserSteps.getUserToken();
-
+        //
         // Create a new Todo object without the isCompleted property
         Todo todo = TodoSteps.addTodoTaskWithoutIsCompleted();
 
