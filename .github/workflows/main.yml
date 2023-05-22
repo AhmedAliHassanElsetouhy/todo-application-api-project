@@ -2,7 +2,7 @@ name: Run Rest assured test cases
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   test:
@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: "16"
           cache: maven
-      - run: mvn cleat test
+      - run: mvn clean test
       - name: Generate Allure report
         run:
             allure generate target/allure-results --clean

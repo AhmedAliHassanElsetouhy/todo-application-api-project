@@ -7,9 +7,10 @@ import com.qacart.todo.steps.UserSteps;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
-import org.testng.annotations.Test;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
+import org.testng.annotations.Test;
+
 
 @Feature("User Feature")
 public class UserTest {
@@ -42,7 +43,7 @@ public class UserTest {
         Response response = UserApi.login(loginData);
         User returnedUser = response.body().as(User.class);
         assertThat(response.statusCode(),equalTo(200));
-        assertThat(returnedUser.getFirstName(), equalTo(returnedUser.getFirstName()));
+        assertThat(returnedUser.getFirstName(), equalTo(user.getFirstName()));
         assertThat(returnedUser.getAccessToken(),not(equalTo("null")));
     }
 

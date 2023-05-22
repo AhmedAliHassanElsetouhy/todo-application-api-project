@@ -12,7 +12,6 @@ public class UserSteps {
         String lastName = faker.name().lastName();
         String email = faker.internet().emailAddress();
         String password = "iLikeQACart";
-
         return new User(firstName, lastName, email, password);
     }
 

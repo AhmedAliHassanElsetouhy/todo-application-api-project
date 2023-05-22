@@ -7,7 +7,6 @@ import com.qacart.todo.steps.UserSteps;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.response.Response;
-import org.hamcrest.Description;
 import org.testng.annotations.Test;
 
 import java.util.List;
