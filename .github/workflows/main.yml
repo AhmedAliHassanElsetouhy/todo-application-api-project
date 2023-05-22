@@ -14,7 +14,3 @@ jobs:
           java-version: "16"
           cache: maven
       - run: mvn clean test
-      - name: Generate Allure report
-        run:
-            allure generate target/allure-results --clean
-            allure report open
