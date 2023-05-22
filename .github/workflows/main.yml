@@ -13,7 +13,7 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v3
         with:
-          java-version: "16"
+          java-version: "17"
           distribution: "temurin"
           cache: maven
       - name: Run Test Cases Using Maven
